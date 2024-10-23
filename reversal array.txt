@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int array[6];
+    
+    for(int i=0;i<6;i++){
+        printf("The number :");
+        scanf("%d",&array[i]);
+    }
+    printf("The array is :");
+    
+    for(int i=0;i<6;i++){
+        printf("%d",array[i]);
+    }
+    printf("\nThe reversal array is :");
+    for(int i=5;i>=0;i--){
+        printf("%d",array[i]);
+    }
+
+    return 0;
+}
