@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,array[10],count=0,num;
+    
+    printf("Enter the element :");
+    
+    for(i=0;i<10;i++){
+        
+        scanf("%d",&array[i]);
+    }
+    
+    printf("Enter a no to count:");
+    scanf("%d",&num);
+    
+    for(i=0;i<10;i++){
+        
+        if(array[i]==num){
+            
+            count++;
+        }
+    }
+    printf("The number %d appears %d times in the array",num,count);
+    
+    return 0;
+}
