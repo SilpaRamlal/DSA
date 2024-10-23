@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,array[10],evensum=0,oddsum=0;
+    
+    printf("Enter the elements :");
+    
+    for(i=0;i<10;i++){
+        
+        scanf("%d",&array[i]);
+    }
+    
+    for(i=0;i<10;i++){
+        
+        if(i%2==0){
+            
+            evensum+=array[i];
+        }
+        else{
+            
+            oddsum+=array[i];
+        }
+    }
+    
+    printf("The sum of elements at even indices : %d\n",evensum);
+    printf("The sum of elements at odd indices : %d",oddsum);
+
+    return 0;
+}
