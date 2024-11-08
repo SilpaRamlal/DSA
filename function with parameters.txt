@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+void addition(int a, int b){
+    int sum=a+b;
+    printf("Sum is :%d\n",sum);
+}
+
+void subtraction(int a, int b){
+    
+    int sub=a-b;
+    printf("Substraction is :%d\n",sub);
+}
+
+void multiplication(int a, int b){
+    
+    int mul=a*b;
+    printf("Multiplication is :%d\n",mul);
+}
+
+void division(int a,int b){
+     float divi=a/b;
+     printf("Division is :%f\n",divi);
+}
+
+int main()
+{
+    addition(5,10);
+    subtraction(20,10);
+    multiplication(5,6);
+    division(9,3);
+    //printf("Hello World");
+
+    return 0;
+}

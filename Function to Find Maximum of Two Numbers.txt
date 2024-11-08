@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+int max_2_num(int a,int b){
+    
+         if(a>b){
+         
+         printf("The largest number is : %d",a);
+     }
+     else{
+         printf("The largest number is : %d",b);
+     }
+     
+}
+
+int main()
+{
+    max_2_num(10,90);
+
+    return 0;
+}
