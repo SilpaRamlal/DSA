@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void swap(){
+    
+    int first,second,temp;
+    
+    printf("Enter the first no :");
+    scanf("%d",&first);
+    
+    printf("Enter the second no :");
+    scanf("%d",&second);
+    
+    temp=first;
+    first=second;
+    second=temp;
+    
+    printf("After swapping, first no : %d\n",first);
+    printf("After swapping, second no : %d",second);
+}
+
+int main()
+{
+    swap();
+    return 0;
+}

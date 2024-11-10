@@ -1,0 +1,68 @@
+#include <stdio.h>
+#define N 100
+
+int stack[N];
+int top=-1;
+
+void push(int data){
+    if(top==N-1){
+        printf("Overflow\n");
+    }
+    else{
+        top++;
+        stack[top]=data;
+        printf("Pushed item is : %d\n",stack[top]);
+    }
+}
+
+int pop(int item){
+    if(top==-1){
+        printf("Underflow\n");
+        return -1;
+    }
+    else{
+        item=stack[top];
+        top--;
+        //printf("Popped item is: %d",item);
+        //return item;
+    }
+}
+int peek(){
+    if(top==-1){
+        printf("The Stack is empty\n");
+        return -1;
+    }
+    else{
+        printf("%d",stack[top]);
+    }
+}
+
+void display(){
+    for(int i=0;i<=top;i++){
+        printf("%d",stack[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    push(11);
+    push(21);
+    push(31);
+    push(41);
+    push(51);
+    
+    int y=peek(1);
+    printf("Top element is : %d\n",y);
+    printf("Stack : ");
+    
+    display();
+    int x=pop(1);
+    printf("Popped element is : %d\n",x);
+    printf("Stack after pop : ");
+    
+   display();
+    
+
+    return 0;
+}

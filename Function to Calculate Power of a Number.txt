@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int power_number(int base,int exponent){
+    float result=1;
+    int i;
+     for(i=0;i<exponent;i++){
+         result*=base;
+     }
+     printf("%f",result);
+     return result;
+}
+
+int main()
+{
+    int base,exponent;
+    
+    printf("Enter the value :");
+    scanf("%d",&base);
+    
+    printf("Enter the exponent:");
+    scanf("%d",&exponent);
+    
+    power_number(base,exponent);
+
+    return 0;
+}

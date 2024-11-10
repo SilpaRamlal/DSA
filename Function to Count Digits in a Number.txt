@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int countdigits(int n){
+    int count=0;
+    
+    do{
+        count++;
+        n /= 10;
+    }while(n!=0);
+    
+    return count;
+}
+
+
+int main()
+{
+    int n;
+    
+    printf("Enter the number :");
+    scanf("%d",&n);
+    
+    int digicount=countdigits(n);
+    printf("The number of digits in %d : %d\n",n,digicount);
+    return 0;
+}

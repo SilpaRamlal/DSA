@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,arr[10];
+    int duplicate;
+    int unique[10],uniquecount=0;
+    
+    printf("Enter the elements :");
+    for(i=0;i<10;i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("The array is :");
+    for(i=0;i<10;i++){
+        printf("%d",arr[i]);
+    }
+    
+    for(i=0;i<10;i++){
+        duplicate=0;
+        for(int j=0;j<uniquecount;j++){
+            if(arr[i]==unique[j]){
+                duplicate=1;
+                break;
+        }
+    }
+    if(duplicate==0){
+        unique[uniquecount]=arr[i];
+        uniquecount++;
+        
+    }
+    }
+    printf("\nArray after duplicates : ");
+    for(i=0;i<uniquecount;i++){
+        printf("%d",unique[i]);
+    }
+
+    return 0;
+}
