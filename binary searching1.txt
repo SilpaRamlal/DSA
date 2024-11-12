@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,n,num;
+    int left=0,right,middle;
+    
+    
+    printf("Enter the size :");
+    scanf("%d",&n);
+    
+    int arr[n];
+    printf("Enter the elements:");
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("Enter the element to found:");
+    scanf("%d",&num);
+    
+    right=n-1;
+    while(left<=right){
+        middle=(left+right)/2;
+        
+        if(arr[middle]==num){
+            printf("The number is found.");
+            break;
+        }
+        
+        else if(arr[middle]>num){
+            right=middle-1;
+        }
+        
+        else{
+            
+            left=middle+1;
+        }
+    }
+    if(left>right){
+        printf("The number is not found");
+    }
+    
+    
+    return 0;
+}
